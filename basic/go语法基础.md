@@ -10,6 +10,19 @@
 > - [go_mod](#go_mod)  
 >   - [go_mod命令行](#go_mod命令行)  
 >   - [go_mod使用](#go_mod使用) 
+> - [go_testing测试用例](#go_testing测试用例)  
+>   - [go_mod命令行](#go_mod命令行)   
+
+
+## Go基础概念
+
+详细参考官方文章--[How to Write Go Code](https://golang.google.cn/doc/code.html#Organization)
+
+ - package：一个 package 包含一些源文件，在一起编译的、同目录或不同目录下的源代码文件；  
+ - module：一个 module 包含一些已发布的 package；   
+ - repository：一个 repo 包含一些 Modules；  
+
+
 
 
 ## 配置GO
@@ -131,4 +144,36 @@ The commands are:
  ```
 
 
+## go_testing测试用例    
 
+go 语言测试用例以  _test.go 结尾，需要包含 func (t *testing.T) 
+
+ - 源代码
+ ```go
+  package morestrings
+  
+  import "testing"
+  
+  func TestReverseRunes(t *testing.T) {
+  	cases := []struct {
+  		in, want string
+  	}{
+  		{"Hello, world", "dlrow ,olleH"},
+  		{"Hello, 世界", "界世 ,olleH"},
+  		{"", ""},
+  	}
+  	for _, c := range cases {
+  		got := ReverseRunes(c.in)
+  		if got != c.want {
+  			t.Errorf("ReverseRunes(%q) == %q,   want %q", c.in, got, c.want)
+  		}
+  	}
+  }
+ ```
+
+ - 运行
+ ```go
+  $ go test
+  PASS
+  ok  	example.com/user/morestrings 0.165s
+ ```
