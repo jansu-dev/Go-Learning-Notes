@@ -11,10 +11,6 @@
 >   - [go_mod命令行](#go_mod命令行)  
 >   - [go_mod使用](#go_mod使用) 
 
-## 基础概念
-
-package
-moudle   
 
 ## 配置GO
 
@@ -95,7 +91,7 @@ The commands are:
         tidy        # 在 go.mod 中加载需要引用的 Modules，删除以前引用但现在不需要的 Modules  
         vendor      # 生成 vendor 目录，并下载 go.mod 中写明的依赖 Modules
         verify      # 验证所有依赖的 Modules 是否正确  
-        why         # 查找
+        why         # 查找依赖的 Modules 
 ```
 
 #### go_mod使用
