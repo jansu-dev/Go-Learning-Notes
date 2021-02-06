@@ -11,7 +11,6 @@
 >   - [go_mod命令行](#go_mod命令行)  
 >   - [go_mod使用](#go_mod使用) 
 > - [go_testing测试用例](#go_testing测试用例)  
->   - [go_mod命令行](#go_mod命令行)   
 
 
 ## Go基础概念
