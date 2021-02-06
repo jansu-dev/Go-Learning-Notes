@@ -1,8 +1,15 @@
 # Go 语法基础  
 
+时间:2021-02-07
 
-
-
+## Summary
+> - [配置GO](#配置GO)  
+>   - [下载go](#下载go)  
+>   - [目录说明](#目录说明)  
+>   - [go_env使用](#go_env使用)  
+> - [go_mod](#go_mod)  
+>   - [go_mod命令行](#go_mod命令行)  
+>   - [go_mod使用](#go_mod使用) 
 
 ## 基础概念
 
@@ -26,7 +33,7 @@ go version
 #### 目录说明  
 
  - $GOROOT：golang 的安装路径
- 
+
  - $GOPATH ：允许多个目录，当有多个目录时，请注意分隔符，多个目录的时候Windows是分号,当有多个GOPATH时默认将go get获取的包存放在第一个目录下;  
    - src 存放源代码,按照golang默认约定，go run，go install等命令的当前工作路径  
    - pkg 编译时生成的中间文件   
@@ -70,7 +77,7 @@ go mod 是 go 语言的包管理工具，有了 go mod 之后，自己编写 sou
  2. 有利于项目独立，source code 成为一个独立的个体，除了 go 环境之外，自包含   
  3. 提供工具统一管理依赖，加快 code 效率
 
-
+#### go_mod命令行
 ```shell
 
 $ go help mod
