@@ -18,4 +18,4 @@ That the repository was build is aim to log process of GoLang Learning.
 
 ## Go 基础  
 
- - [](https://github.com/jansu-dev/Go-Learning-Notes/blob/master/basic/go%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80.md)
+ - [Go 语法基础](https://github.com/jansu-dev/Go-Learning-Notes/blob/master/basic/go%E8%AF%AD%E6%B3%95%E5%9F%BA%E7%A1%80.md)
