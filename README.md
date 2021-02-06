@@ -6,6 +6,7 @@ That the repository was build is aim to log process of GoLang Learning.
 
 
 > - [推荐书籍](#推荐书籍)  
+> - [Go基础](#Go基础)  
 
 
 
@@ -16,6 +17,6 @@ That the repository was build is aim to log process of GoLang Learning.
  - [**gopkg-case-repo**](https://github.com/astaxie/gopkg)  
  - [**Go 语言标准库**](https://books.studygolang.com/The-Golang-Standard-Library-by-Example/)  
 
-## Go 基础  
+## Go基础  
 
  - [Go 环境使用基础](https://github.com/jansu-dev/Go-Learning-Notes/blob/master/basic/go%E7%8E%AF%E5%A2%83%E4%BD%BF%E7%94%A8%E5%9F%BA%E7%A1%80.md)
