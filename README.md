@@ -1,7 +1,6 @@
 # Go-Learning-Notes  
 
 
-
 That the repository was build is aim to log process of GoLang Learning.
 
 
