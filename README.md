@@ -24,4 +24,4 @@ That the repository was build is aim to log process of GoLang Learning.
 ## Go网络编程
 
  - [TCP CASE](./go_code_case/case_tcp_test)  
- - [Interface CASE](./go_code_case/interface_test)  
+ - [Interface CASE](./go_code_case/case_interface_test)  
