@@ -47,7 +47,9 @@ go 正交式编程方式的优点：
 
 #### GO实现业务逻辑解耦合CASE   
 
-基于 Xorm Module 的非接口式直接编程
+假设我们在刚开始编程时，直接基于采用的 Module 作为应用组件进行编程。如果所采用的 Module 不在被维护或该组件不在适用于当前应用，需要更换为我们的其他更合适的 Module，那么将带来处于两个 Module 之间兼容性的问题等等，而且很难排查；下面案例简介 Xorm 和 Gorm 之间兼容性问题的案例；
+
+ - 基于 Xorm Module 的非接口式直接编程
 ```go
 // XormDB's struction
 type XormDB struct{
@@ -66,7 +68,7 @@ func (t *Trade) InsertTrade(){
 }
 ``` 
 
-基于 Gorm Module 的非接口式直接编程
+ - 基于 Gorm Module 的非接口式直接编程
 ```go
 // GormDB's struction
 type GormDB struct{
@@ -85,11 +87,15 @@ func (t *Trade) InsertTrade(){
 }
 ```
 
-引入接口封装后解耦合带来的便利  
+如果我们在编程时引入 interface，那么如上问题将不会是问题。这就是引入接口封装后解耦合带来的便利。  
 
+ - interface 接口封装
 ```go   
-
-
+type DBcommon interface{
+  Insert(ctx context.Context, instance{}){
+    ...
+  }
+}
 ```
 
 
