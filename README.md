@@ -22,9 +22,10 @@ That the repository was build is aim to log process of GoLang Learning.
 
 
 ## Go网络编程
-
- - [TCP CASE](./go_code_case/case_tcp_test)  
- - [Interface CASE](./go_code_case/case_interface_test)  
- - [waitGroup CASE](./go_code_case/case_waitgroup_test)  
- - [Context CASE](./go_code_case/case_context_test)  
- - [goyacc CASE](./go_code_case/case_goyacc_test)  
+ - 基础package
+    - [TCP CASE](./go_code_case/case_tcp_test)  
+    - [Interface CASE](./go_code_case/case_interface_test)  
+    - [goyacc CASE](./go_code_case/case_goyacc_test)  
+ - 并发控制  
+    - [waitGroup CASE](./go_code_case/case_waitgroup_test)  
+    - [Context CASE](./go_code_case/case_context_test)  
